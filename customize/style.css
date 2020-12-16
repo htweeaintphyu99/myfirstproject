@@ -1,0 +1,27 @@
+:root {
+    --primaryColor: #ECB706;
+    --linkColor: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    background-image: url("asset/mainBg.svg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+nav {
+    padding: 5px 30px;
+}
+
+nav .brand-logo {
+    color: var(--primaryColor) !important;
+    font-size: 1.9rem !important;
+}
+
+.link {
+    color: var(--linkColor)
+}
+

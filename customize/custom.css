@@ -1,0 +1,7 @@
+.row {
+  margin-bottom: 0; }
+
+nav ul a:hover {
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #ECB706;
+  background-color: transparent; }
