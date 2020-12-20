@@ -1,14 +1,18 @@
 :root {
     --primaryColor: #ECB706;
+    --secondaryColor: #EA9D71;
     --linkColor: rgba(0, 0, 0, 0.5);
+    --primaryFont: 'Playfair Display', serif;
+    --secondaryFont: 'Roboto', sans-serif;
 }
 
 main {
-    background-image: url("asset/mainBg.svg");
+    background-image: url("../asset/mainBg.svg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 100vh;
     width: 100%;
+    overflow-x: hidden
 }
 
 
@@ -19,9 +23,360 @@ nav {
 nav .brand-logo {
     color: var(--primaryColor) !important;
     font-size: 1.9rem !important;
+    font-family: var(--primaryFont)
+
 }
 
 .link {
     color: var(--linkColor)
 }
+
+.banner {
+    padding-top: 16px
+}
+
+.banner__description {
+    position: relative;
+    top: 30vh;
+    left: 5rem;
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.banner__description span {
+    color: var(--secondaryColor);
+    font-family: var(--primaryFont)
+}
+
+.btn-large {
+    background-color: var(--primaryColor)
+}
+
+.btn-large:hover {
+    background-color: var(--secondaryColor);
+}
+
+
+.banner__pic img{
+    height: 100%;
+    width: 95%;
+}
+
+.services {
+    background-image: url("../asset/servicesBg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+}
+
+.servicesImg-container {
+    padding: 20px 40px 0px
+}
+
+.servicesImg {
+    height: 20vh
+}
+
+.servicesDesc {
+    font-size: 20;
+}
+
+.services h4, .sales h4, .categories h4, .about h4 {
+    font-family: var(--primaryFont);
+    color: var(--secondaryColor);
+    margin-bottom: 30px;
+}
+
+.services .card {
+    background-color: #f5f8f7
+}
+
+.sales {
+    background-image: url("../asset/salesBg.svg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 0px 30px 80px
+}
+
+
+.sales .card {
+    width: 300px;
+}
+
+.sales .card img {
+    height: 280px;
+    width: 100%
+}
+
+.sales .priceTag {
+    margin-bottom: 8px !important;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.owl-dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    margin: 0px 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot:hover, 
+.owl-dot:active {
+    background-color: rgba(0, 0, 0, 0.5) !important
+}
+
+.sales .card p a {
+    color: var(--secondaryColor)
+}
+
+.sales .card p span {
+    color: var(--primaryColor)
+}
+
+
+.sales .card .card-title {
+    font-size: 1.4rem !important;
+    font-weight: 400
+}
+
+.sales .card img {
+    transition: transform .5s ease;
+}
+
+.sales .card:hover img{
+    transform: scale(1.2);
+}
+
+.categories {
+    background-image: url("../asset/categoriesBg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.categories h4 {
+    padding-top: 30px
+}
+
+.categories .card {
+    width: 260px;
+    background: #fdf5e8;
+    transition: all 1s ease
+}
+
+.categories .card-image {
+    padding: 15px 15px 0px;
+}
+
+.categories .card img {
+    height: 230px;
+}
+
+.categories .card h6 {
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+}
+
+
+.categories .card:hover {
+    background: #CCDDF7;
+    cursor: pointer;
+}
+
+.categories .card:hover h6{
+    color: #3F3D56
+}
+
+.categories .card:hover img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.about-bg-title {
+    position: absolute;
+}
+
+.about-bg {
+    margin-left: 40vw    
+}
+
+.about-title {
+    position: absolute;
+    top: 2vh;
+    margin-left: 45vw;
+}
+
+.about__contact {
+    padding: 0px 50px
+}
+
+.about__progress {
+    padding: 120px 50px 0px
+}
+
+.about__progress h5, .about__contact h5{
+    font-family: var(--primaryFont);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 28px;
+} 
+
+.about__progress-container, .about__contact-container {
+    display: flex;
+}
+
+.about__progress ul {
+    list-style-image: url("../asset/crown-solid.svg");
+    color:rgba(0, 0, 0, 0.6);
+    padding: 0px 20px;
+}
+
+.about__progress ul li {
+    font-size: 20px !important;
+    margin-bottom: 8px;
+}
+
+.about__progress ul span {
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+    font-size: 24px !important;
+}
+
+.about__contact {
+    padding-top: 20px
+}
+
+.about__contact-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+
+.about__contact-container p {
+    color:rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    margin: 8px 0px
+}
+
+.about__contact-container span {
+    color: var(--secondaryColor)
+}
+
+footer {
+    background-color: var(--primaryColor);
+    padding: 50px 0px
+}
+
+footer a i {
+    font-size: 30px;
+}
+footer a {
+    color:rgba(0, 0, 0, 0.7);
+    padding-left: 4px;
+}
+
+footer div {
+    margin-top: 8px
+}
+
+.links a:hover {
+    color:rgb(0, 0, 0);
+}
+
+.copyright {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+@media (min-width: 561px) and (max-width: 960px) {
+    .banner__description {
+        top: 0;
+        left: 0;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .banner__description h3 {
+        margin-top: 0
+    }
+
+    .about-bg {
+        margin-left: 38vw;
+    }
+
+    .about__progress-container {
+        flex-direction: column-reverse
+    }   
+    
+    .about__contact-container {
+        flex-direction: column;
+    }
+
+    .about__contact-container div {
+        padding: 0px
+    }
+}
+
+
+
+@media (max-width: 560px) {
+    nav .brand-logo {
+        font-size: 1.5rem !important;
+    }
+
+    .banner__description-container {
+        margin-bottom: 30px;
+        padding: 0
+
+    }
+
+    .banner__description {
+        top: 0;
+        left:0;
+        padding: 0px 1rem
+    }
+
+    .banner__description h3 {
+        font-size: 2.2rem;
+    }
+
+    .servicesImg-container {
+        padding: 15px 15px 0px
+    }
+
+
+    .about-bg {
+        margin-left: 28vw;
+    }
+
+    .about-title {
+        margin-left: 38vw;
+    }
+
+    .about__progress-container {
+        flex-direction: column-reverse
+    }   
+    
+    .about__contact-container {
+        flex-direction: column;
+    }
+
+    .about__contact-container div {
+        padding: 0px
+    }
+
+}
+
 
