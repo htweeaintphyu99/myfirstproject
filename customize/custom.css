@@ -5,3 +5,10 @@ nav ul a:hover {
   color: rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid #ECB706;
   background-color: transparent; }
+
+.tabs.tabs-transparent .tab a {
+  color: #EA9D71; }
+
+.tabs.tabs-transparent .tab a:hover {
+  color: #EA9D71;
+  border: none; }

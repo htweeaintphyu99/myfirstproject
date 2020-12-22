@@ -1,0 +1,99 @@
+:root {
+    --primaryColor: #ECB706;
+    --secondaryColor: #EA9D71;
+    --linkColor: rgba(0, 0, 0, 0.5);
+    --primaryFont: 'Playfair Display', serif;
+    --secondaryFont: 'Roboto', sans-serif;
+}
+
+.nav-wrapper {
+    padding: 5px 30px;
+}
+
+nav .brand-logo {
+    color: var(--primaryColor) !important;
+    font-size: 1.9rem !important;
+    font-family: var(--primaryFont)
+
+}
+
+.link {
+    color: var(--linkColor)
+}
+
+#categoriesLink {
+    border-bottom: 1px solid var(--primaryColor);
+    color:rgba(0, 0, 0, 0.8)
+}
+
+.nav-content {
+    padding-top: 8px
+}
+
+.all, .rtwOneSet {
+    background-color: #FEF6E9;
+    padding: 75px 8px 16px 8px;
+}
+
+.card {
+    width: 22vw;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 36vh;
+}
+
+.card  .card-content {
+    padding: 22px
+}
+
+.card .card-content h6 {
+    font-family: var(--primaryFont);
+}
+
+.card .card-content p {
+    color: var(--primaryColor)
+}
+
+.rtwOneSet {
+    display: none
+}
+
+footer {
+    background-color: var(--primaryColor);
+    padding: 30px 0px
+}
+
+footer a i {
+    font-size: 30px;
+}
+footer a {
+    color:rgba(0, 0, 0, 0.7);
+    padding-left: 4px;
+}
+
+footer div {
+    margin-top: 8px
+}
+
+.links a:hover {
+    color:rgb(0, 0, 0);
+}
+
+.copyright {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .card {
+        width: 30vw
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 40vw;
+    }
+}

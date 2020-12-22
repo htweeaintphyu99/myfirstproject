@@ -1,4 +1,6 @@
 $primary-color: #ECB706;
+$secondary-color: #EA9D71;
+
 
 .row {
     margin-bottom: 0
@@ -14,4 +16,14 @@ nav {
             }
         }
     }
+}
+
+
+.tabs.tabs-transparent .tab a{
+    color: $secondary-color
+}
+
+.tabs.tabs-transparent .tab a:hover {
+    color: $secondary-color;
+    border: none
 }
